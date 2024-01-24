@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="A">Pizza Time</h1>
+        <div class="A" id="B">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="" onmouseover="deal1()" onmouseleave="deal2()">Deals</a>
+        </div>
+        <div class="A" id="B"><a href="" onmouseover="cart1()" onmouseleave="cart2()">Cart</a></div>
+        <button class="A">signup</button>
+        <button class="A">Login</button>
+    </header>
+    <br><br><br><br><br><br>
+
+    <section class="start">
+        <p><b>Free Home Delivery, Gauaranteed before 20 minutes.</b></p>
+    </section>
+
+    <section>
+        <h1>Menu</h1>
+        <div class="menu-item">
+            <h3>Margherita</h3>
+            <p> <br> Classic tomato sauce, mozzarella, and basil.</p>
+            <p>$10.99</p>
+            <img src="images/m.jfif" alt="">
+        </div>
+
+        <div class="menu-item">
+            <h3>Pepperoni</h3>
+            <p> <br> Tomato sauce, mozzarella, and pepperoni.</p>
+            <p>$12.99</p>
+            <img src="images/p.jfif" alt="">
+        </div>
+
+        <div class="menu-item">
+            <h3>Veggie Delight</h3>
+            <p>Tomato sauce, mozzarella, mushrooms, bell peppers, onions, and olives.</p>
+            <p>$14.99</p>
+            <img src="images/v.jfif" alt="">
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Place your order now!</h2>
+        <form>
+            <label for="pizza-type">Select Pizza:</label>
+            <select id="pizza-type" name="pizza-type">
+                <option value="margherita">Margherita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="veggie">Veggie Delight</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <br><br>
+            <button type="submit" onclick="show()">Order Now</button>
+            <br><br>
+            <hr>
+        </form>
+    </section>
+
+    <section id="ha">
+        <p>Deals for the day.</p>
+    </section>
+    <section id="hb">
+        <p>Items you have selected.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizza Paradise</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
